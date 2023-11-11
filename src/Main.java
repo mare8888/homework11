@@ -1,4 +1,5 @@
 
+import java.lang.invoke.WrongMethodTypeException;
 import java.util.*;
 
 import java.util.List;
@@ -6,13 +7,13 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         //Задание 1
-        /*try {
+        try {
             Car car = new Car("linsi", "Tonirovani");
-            car.setFari("linhgvgsi");
+            car.setFari("linsi");
             car.setStekla("Tonirfttovani");
-        } catch (MalformedParameterizedTypeException ex) {
-            throw new RuntimeException(ex);
-        } */
+        } catch (WrongMethodTypeException ex) {
+            throw new WrongCountSteklaException(ex);
+        }
 
         //Задание 2
         ArrayList<Integer> cats = new ArrayList<>(10);
