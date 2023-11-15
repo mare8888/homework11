@@ -1,11 +1,12 @@
+package Domawka10;
 
 import java.lang.invoke.WrongMethodTypeException;
 import java.util.*;
 
 import java.util.List;
 public class Main {
-
     public static void main(String[] args) throws Exception {
+
         //Задание 1
         try {
             Car car = new Car("linsi", "Tonirovani");
@@ -35,9 +36,9 @@ public class Main {
         ArrayList<String> numList = new ArrayList<>(List.of(array));
 
         for (int i = 0; i < numList.size(); i++) {
-            System.out.println(numList.get(i));;
+            System.out.println(numList.get(i));
+            ;
         }
-
 
 
         //Дополнительно
@@ -52,5 +53,7 @@ public class Main {
     }
 
 }
+
+
 
 

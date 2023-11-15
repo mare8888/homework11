@@ -1,3 +1,5 @@
+package Domawka10;
+
 public class Cat {
     private String name;
 

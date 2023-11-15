@@ -1,3 +1,5 @@
+package Domawka10;
+
 public class Car {
     private String fari;
     private String stekla;
