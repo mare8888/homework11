@@ -1,13 +1,9 @@
 package Domawka11;
-
 import org.w3c.dom.Node;
 
 public class MyLinkedLisst<T> {
     private int size;
     private Node<T> first;
-
-
-
     private Node<T> last;
 
     public void add(T element) {
@@ -28,12 +24,33 @@ public class MyLinkedLisst<T> {
         return size;
     }
 
-    public T get(int index) {
+    public T getFirst(int index) {
+        return getNodeByIndex(index).element;
+    }
+
+    public T getLast(int index) {
+        return getNodeByIndex(index).element;
+    }
+
+    public Node<T> getNodeByIndex(int index){
         Node<T> node = first;
         for (int i = 0; i < index; i++) {
             node = node.next;
         }
-        return node.element;
+        return node;
+
+    }
+
+    public void addFirst(T element) {
+        Node<T> newNode = new Node<>(element, first, null);
+        if (first != null) {
+            first.prev = newNode;
+        }
+        first = newNode;
+        if (last == null) {
+            last = newNode;
+        }
+        size++;
     }
 
     private static class Node<T> {
