@@ -11,7 +11,7 @@ public class Main {
         try {
             Car car = new Car("linsi", "Tonirovani");
             car.setFari("linsi");
-            car.setStekla("Tonirfttovani");
+            car.setStekla("Tonirovani");
         } catch (WrongMethodTypeException ex) {
             throw new WrongCountSteklaException(ex);
         }
@@ -37,7 +37,6 @@ public class Main {
 
         for (int i = 0; i < numList.size(); i++) {
             System.out.println(numList.get(i));
-            ;
         }
 
 
