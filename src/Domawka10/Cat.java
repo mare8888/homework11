@@ -11,7 +11,7 @@ public class Cat {
 
     @Override
     public String toString() {
-        return "Cat{" +
+        return "Domawka12.Cat{" +
                 "name='" + name + '\'' +
                 '}';
     }

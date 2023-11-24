@@ -1,3 +1,5 @@
+package Domawka12;
+
 public class Lymda {
     public static void main(String[] args) {
         Monitor monitor = (x, y) -> x + y;

@@ -1,9 +1,11 @@
-import javax.management.monitor.Monitor;
+package Domawka12;
+
+import Domawka12.Cat;
+
 import java.io.*;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.FileOutputStream;
-import java.util.SortedMap;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -81,7 +83,7 @@ public class Main {
 
         // Задание 2
 
-        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Cat.txt"))){
+        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Domawka12.Cat.txt"))){
 
             Cat cat = new Cat("Barsik", 2, 10);
             oos.writeObject(cat);
@@ -90,7 +92,7 @@ public class Main {
             throw  new RuntimeException(e);
         }
 
-        try(ObjectInputStream ooi = new ObjectInputStream(new FileInputStream("Cat.txt"))){
+        try(ObjectInputStream ooi = new ObjectInputStream(new FileInputStream("Domawka12.Cat.txt"))){
          Cat cat;
          cat = (Cat) ooi.readObject();
             System.out.println();
@@ -99,7 +101,6 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        //Задание 3
 
     }
 

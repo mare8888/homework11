@@ -1,3 +1,5 @@
+package Domawka12;
+
 import javax.swing.*;
 import java.io.Serializable;
 
@@ -40,7 +42,7 @@ public class Cat implements Serializable {
 
     @Override
     public String toString() {
-        return "Cat{" +
+        return "Domawka12.Cat{" +
                 "Name='" + Name + '\'' +
                 ", Age=" + Age +
                 ", Weight=" + Weight +
